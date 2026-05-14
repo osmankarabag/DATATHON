@@ -1,0 +1,48 @@
+{
+    "best_method": "Stacking",
+    "best_oof_rmse": 1.219076975513621,
+    "previous_rmse": 1.2201,
+    "improvement": 0.0010230244863789206,
+    "oof_rmse_all": {
+        "CatBoost": 1.2196546182850538,
+        "LightGBM": 1.2222770144229766,
+        "XGBoost": 1.223855619480178,
+        "ExtraTrees": 1.252024417964286
+    },
+    "stacking_rmse": 1.219076975513621,
+    "blended_rmse": 1.2191287598879024,
+    "optuna_params": {
+        "CatBoost": {
+            "iterations": 1937,
+            "depth": 6,
+            "learning_rate": 0.014362470802740026,
+            "l2_leaf_reg": 0.25775178948108174,
+            "bagging_temperature": 0.8325212455806807,
+            "random_strength": 5.7946027678891925,
+            "border_count": 186,
+            "min_data_in_leaf": 29
+        },
+        "LightGBM": {
+            "n_estimators": 1935,
+            "max_depth": 7,
+            "learning_rate": 0.006483268176267772,
+            "num_leaves": 27,
+            "subsample": 0.6326833112555242,
+            "colsample_bytree": 0.4137279147083351,
+            "reg_alpha": 7.990934218390473,
+            "reg_lambda": 0.0018077171648385587,
+            "min_child_samples": 56
+        },
+        "XGBoost": {
+            "n_estimators": 1230,
+            "max_depth": 4,
+            "learning_rate": 0.017126129354234396,
+            "subsample": 0.7059883189929025,
+            "colsample_bytree": 0.44861436241406577,
+            "reg_alpha": 6.118634675705416,
+            "reg_lambda": 0.002252031629197933,
+            "min_child_weight": 11,
+            "gamma": 1.9468452349240508
+        }
+    }
+}
