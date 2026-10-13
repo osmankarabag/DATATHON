@@ -179,3 +179,7 @@ cython_debug/
 #  refer to https://docs.cursor.com/context/ignore-files
 .cursorignore
 .cursorindexingignore
+# IDE / eğitim çıktıları
+.idea/
+__pycache__/
+catboost_info/
